@@ -1,13 +1,19 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+int main (int argc, char *argv[]) {
 
-    float num = 150.5;
-    float *x; // puntero a float
+    int num = 150, a;
+    int *x; // puntero x
 
-    x = &num; // dirección de num
+    x = &num; // almacena la direcion de num
+    
+    printf("%d %p",num,x); // imprime 
+                           // %p  te da la direccion de la variable
+                           // %d  te da el valor de la variable num
 
-    printf("%f %p", num, x); // %f para float, %p para dirección
-
+    float pi = 3.1415, d;
+    float *ptrF; 
+    ptrF = &pi;
+    printf("%f %p",pi,ptrF); // imprime 
     return 0;
 }
